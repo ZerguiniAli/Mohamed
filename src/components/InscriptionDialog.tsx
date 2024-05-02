@@ -11,7 +11,13 @@ import { Label } from "@/components/ui/label"
 import { Separator } from "@/components/ui/separator"
 import { useEffect, useState } from "react"
 
-export function InscriptionDialog({ isOpen, onClose }) {
+interface InscriptionDialogProps {
+  isOpen: boolean;
+  onClose: () => void;
+}
+
+export function InscriptionDialog({isOpen , onClose }: InscriptionDialogProps) {
+
 
     const [isScrollable, setIsScrollable] = useState(false);
 
