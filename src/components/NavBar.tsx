@@ -9,7 +9,7 @@ const NavBar = () => {
   const router = useRouter()
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
-  const handleOnclick = (e) => {
+  const handleOnclick = (e: { preventDefault: () => void }) => {
     e.preventDefault()
     router.push('/')
   }
