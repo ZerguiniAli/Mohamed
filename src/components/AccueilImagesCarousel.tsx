@@ -20,7 +20,7 @@ const AccueilImagesCarousel = () => {
                     <div className="h-screen relative overflow-hidden">
                         <Image alt="" src={planet} layout="fill" objectFit="cover" />
                         <div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center">
-                            <h1 className="text-4xl font-bold mb-4 w-2/3">Votre plateforme d’appels d’offres et d’opportunités business</h1>
+                            <h1 className="text-xl md:text-2xl lg:text-4xl font-bold mb-4 w-2/3">Votre plateforme d’appels d’offres et d’opportunités business</h1>
                         </div>
                     </div>
                 </CarouselItem>
@@ -28,7 +28,7 @@ const AccueilImagesCarousel = () => {
                     <div className="h-screen relative overflow-hidden">
                         <Image alt="" src={cahier} layout="fill" objectFit="cover" />
                         <div className="absolute inset-0 flex flex-col justify-center items-center text-black text-center">
-                            <h1 className="text-4xl font-bold mb-4 w-2/3">Un Accompagnement pour tout retrait de cahier de charge, dépôt de soumission et ouverture des plis</h1>
+                            <h1 className="text-xl md:text-2xl lg:text-4xl font-bold mb-4 w-2/3">Un Accompagnement pour tout retrait de cahier de charge, dépôt de soumission et ouverture des plis</h1>
                         </div>
                     </div>
                 </CarouselItem>
@@ -36,7 +36,7 @@ const AccueilImagesCarousel = () => {
                     <div className="h-screen relative overflow-hidden">
                         <Image alt="" src={sahm} layout="fill" objectFit="cover" />
                         <div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center">
-                            <h1 className="text-4xl font-bold mb-4 w-2/3">Vous cherchez un partenaire de confiance pour votre entreprise ?
+                            <h1 className="text-xl md:text-2xl lg:text-4xl font-bold mb-4 w-2/3">Vous cherchez un partenaire de confiance pour votre entreprise ?
 Ms marches est votre meilleure solution</h1>
                         </div>
                     </div>
@@ -45,7 +45,7 @@ Ms marches est votre meilleure solution</h1>
                     <div className="h-screen relative overflow-hidden">
                         <Image alt="" src={coffe} layout="fill" objectFit="cover" />
                         <div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center">
-                            <h1 className="text-4xl font-bold mb-4 w-2/3">votre meilleur partenaire en service après vente, veille à apporter un suivi de qualité à ses abonnés.</h1>
+                            <h1 className="text-xl  md:text-4xl lg:text-4xl font-bold mb-4 w-2/3">votre meilleur partenaire en service après vente, veille à apporter un suivi de qualité à ses abonnés.</h1>
                         </div>
                     </div>
                 </CarouselItem>
