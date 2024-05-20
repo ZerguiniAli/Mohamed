@@ -25,9 +25,9 @@ const Annonce = () => {
   }, []);
 
   const renderAnnonceCards = () => {
-    const rows = [];
-    let currentRow = [];
-
+    const rows: JSX.Element[] = [];
+    let currentRow: JSX.Element[] = [];
+  
     annonces.forEach((annonce, index) => {
       currentRow.push(
         <AnnonceCard
@@ -40,7 +40,7 @@ const Annonce = () => {
           types={annonce.types}
         />
       );
-
+  
       if ((index + 1) % 3 === 0 || index === annonces.length - 1) {
         rows.push(
           <div key={`row-${index}`} className="flex gap-4 my-4">
@@ -50,10 +50,10 @@ const Annonce = () => {
         currentRow = [];
       }
     });
-
+  
     return rows;
   };
-
+  
   return (
     <div className='flex flex-col justify-center items-center py-2 px-3 md:py-10'>
       <div className='flex flex-wrap gap-2'>
