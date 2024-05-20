@@ -43,7 +43,7 @@ const Annonce = () => {
   
       if ((index + 1) % 3 === 0 || index === annonces.length - 1) {
         rows.push(
-          <div key={`row-${index}`} className="flex gap-4 my-4">
+          <div key={`row-${index}`} className="flex flex-wrap items-center justify-center gap-4 my-4">
             {currentRow}
           </div>
         );
