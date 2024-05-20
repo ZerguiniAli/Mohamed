@@ -1,0 +1,118 @@
+[
+    {
+        "type": "Type D’appel d’offres",
+        "options": [
+            {
+                "value": "national_open",
+                "name": "L’appel d’offres national ouvert"
+            },
+            {
+                "value": "international_open",
+                "name": "L’appel d’offres international ouvert"
+            },
+            {
+                "value": "national_restricted",
+                "name": "L’appel d’offres national restreint"
+            },
+            {
+                "value": "international_restricted",
+                "name": "L’appel d’offres international restreint"
+            },
+            {
+                "value": "national_and_international_open",
+                "name": "L’appel d’offres national et international ouvert"
+            },
+            {
+                "value": "national_and_international_restricted",
+                "name": "L’appel d’offres national et international restreint"
+            }
+        ]
+    },
+    {
+        "type": "Type de Concours",
+        "options": [
+            {
+                "value": "national_open",
+                "name": "Concours national ouvert"
+            },
+            {
+                "value": "international_open",
+                "name": "Concours international ouvert"
+            },
+            {
+                "value": "national_restricted",
+                "name": "Concours national restreint"
+            },
+            {
+                "value": "international_restricted",
+                "name": "Concours international restreint"
+            },
+            {
+                "value": "national_and_international_open",
+                "name": "Concours national et international ouvert"
+            },
+            {
+                "value": "national_and_international_restricted",
+                "name": "Concours national et international restreint"
+            }
+        ]
+    },
+    {
+        "type": "Type de Consultations",
+        "options": [
+            {
+                "value": "national_open",
+                "name": "Consultation nationale ouverte"
+            },
+            {
+                "value": "international_open",
+                "name": "Consultation internationale ouverte"
+            },
+            {
+                "value": "national_restricted",
+                "name": "Consultation nationale restreinte"
+            },
+            {
+                "value": "international_restricted",
+                "name": "Consultation internationale restreinte"
+            },
+            {
+                "value": "national_and_international_open",
+                "name": "Consultation nationale et internationale ouverte"
+            },
+            {
+                "value": "national_and_international_restricted",
+                "name": "Consultation nationale et internationale restreinte"
+            }
+        ]
+    },
+    {
+        "type": "Type de Preselections",
+        "options": [
+            {
+                "value": "national_open",
+                "name": "Présélection nationale ouverte"
+            },
+            {
+                "value": "international_open",
+                "name": "Présélection internationale ouverte"
+            },
+            {
+                "value": "national_restricted",
+                "name": "Présélection nationale restreinte"
+            },
+            {
+                "value": "international_restricted",
+                "name": "Présélection internationale restreinte"
+            },
+            {
+                "value": "national_and_international_open",
+                "name": "Présélection nationale et internationale ouverte"
+            },
+            {
+                "value": "national_and_international_restricted",
+                "name": "Présélection nationale et internationale restreinte"
+            }
+        ]
+    }
+]

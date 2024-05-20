@@ -4,7 +4,7 @@ import { Separator } from '@radix-ui/react-separator';
 
 const Footer = () => {
   return (
-    <div className='w-full bg-black flex flex-col md:flex-row justify-evenly py-6 px-1 md:px-5 lg:px-10 items-center gap-3 bottom-0 overflow-hidden'>
+    <div className='bottom-0 w-full bg-black flex flex-col md:flex-row justify-evenly py-6 px-1 md:px-5 lg:px-10 items-center gap-3 overflow-hidden'>
       <div className='flex flex-col gap-6 md:gap-10 min-w-[150px] md:w-1/3 px-4'>
         <p className='text-white text-center'>Votre plateforme d’appels d’offres et d’opportunités business.</p>
       </div>

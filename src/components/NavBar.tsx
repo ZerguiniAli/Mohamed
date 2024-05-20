@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState } from 'react'
+import React, { useState, MouseEvent } from 'react'
 import { useRouter } from 'next/navigation'
 import { ConnexionDialog } from './ConnexionDialog'
 import { InscriptionDialog } from './InscriptionDialog'
@@ -8,14 +8,20 @@ import { InscriptionDialog } from './InscriptionDialog'
 const NavBar = () => {
   const router = useRouter()
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [activePage, setActivePage] = useState<string>('/')
 
-  const handleOnclick = (e: { preventDefault: () => void }) => {
+  const handleOnclick = (page: string) => (e: MouseEvent<HTMLHeadingElement>) => {
     e.preventDefault()
-    router.push('/')
+    setActivePage(page)
+    router.push(page)
   }
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
+  }
+
+  const getClassNames = (page: string) => {
+    return `cursor-pointer transition ${activePage === page ? 'font-bold' : ''}`
   }
 
   return (
@@ -26,7 +32,7 @@ const NavBar = () => {
             <div className="flex-shrink-0">
               <h1
                 className="font-semibold cursor-pointer"
-                onClick={handleOnclick}
+                onClick={handleOnclick('/')}
               >
                 LO<br />GO
               </h1>
@@ -34,19 +40,29 @@ const NavBar = () => {
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-10">
                 <h1
-                  className="font-semibold cursor-pointer"
-                  onClick={handleOnclick}
+                  className={getClassNames('/')}
+                  onClick={handleOnclick('/')}
                 >
                   Accueil
                 </h1>
-                <h1 className="italic">vide</h1>
-                <h1 className="italic">vide</h1>
+                <h1
+                  className={getClassNames('/annonce')}
+                  onClick={handleOnclick('/annonce')}
+                >
+                  Annonce
+                </h1>
+                <h1
+                  className={getClassNames('/offer')}
+                  onClick={handleOnclick('/offer')}
+                >
+                  Nos offres
+                </h1>
               </div>
             </div>
           </div>
           <div className="hidden md:block">
             <div className="ml-4 flex items-center md:ml-6 gap-3">
-              <ConnexionDialog/>
+              <ConnexionDialog />
             </div>
           </div>
           <div className="-mr-2 flex md:hidden">
@@ -83,22 +99,28 @@ const NavBar = () => {
       >
         <div className="px-2 pt-2 pb-3 sm:px-3">
           <h1
-            className="font-semibold cursor-pointer block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-100"
-            onClick={handleOnclick}
+            className={getClassNames('/')}
+            onClick={handleOnclick('/')}
           >
             Accueil
           </h1>
-          <h1 className="italic block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-100">
-            vide
+          <h1
+            className={getClassNames('/annonce')}
+            onClick={handleOnclick('/annonce')}
+          >
+            Annonce
           </h1>
-          <h1 className="italic block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-100">
-            vide
+          <h1
+            className={getClassNames('/offer')}
+            onClick={handleOnclick('/offer')}
+          >
+            Nos offres
           </h1>
         </div>
         <div className="pt-4 pb-3 border-t border-gray-200">
           <div className="flex items-center px-4">
             <div className="flex-shrink-0">
-              <ConnexionDialog/>
+              <ConnexionDialog />
             </div>
             <div className="ml-4">
             </div>
