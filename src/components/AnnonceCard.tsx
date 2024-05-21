@@ -42,9 +42,9 @@ export function AnnonceCard({ id, title, location, date, description, types }: A
             </p>
           </div>
           <div className="w-full">
-            <h4 className="font-bold">Secteur:</h4>
+            <h4 className="font-bold">Secteur(s):</h4>
             {types.map((type, index) => (
-              <p key={index} className="py-1">
+              <p key={index} className="py-1 text-end">
                 {type}
               </p>
             ))}
