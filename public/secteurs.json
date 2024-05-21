@@ -1,0 +1,226 @@
+[
+    {
+        "value": "00",
+        "name": "Tourisme et voyage"
+    },
+    {
+        "value": "01",
+        "name": "Agriculture, élevage, forêt et pêche"
+    },
+    {
+        "value": "02",
+        "name": "Assurance et banque"
+    },
+    {
+        "value": "03",
+        "name": "Bâtiment et génie civil"
+    },
+    {
+        "value": "04",
+        "name": "Électricité bâtiment et éclairage public"
+    },
+    {
+        "value": "05",
+        "name": "Équipements pour les collectivités et équipements de ville"
+    },
+    {
+        "value": "06",
+        "name": "Architecture et urbanisme"
+    },
+    {
+        "value": "07",
+        "name": "Étude et consulting"
+    },
+    {
+        "value": "08",
+        "name": "Froid, climatisation, chauffage et plomberies"
+    },
+    {
+        "value": "09",
+        "name": "Habillement et textiles"
+    },
+    {
+        "value": "10",
+        "name": "Hydraulique, assainissement et traitement des eaux et équipements"
+    },
+    {
+        "value": "11",
+        "name": "Impression, édition et communication"
+    },
+    {
+        "value": "12",
+        "name": "Services"
+    },
+    {
+        "value": "13",
+        "name": "Sécurité"
+    },
+    {
+        "value": "14",
+        "name": "Transport, engin et logistique"
+    },
+    {
+        "value": "15",
+        "name": "Sablage, peinture et travaux plâtre"
+    },
+    {
+        "value": "16",
+        "name": "Travaux publics"
+    },
+    {
+        "value": "17",
+        "name": "Immobilier"
+    },
+    {
+        "value": "18",
+        "name": "Industrie électronique et matériels audio-visuel"
+    },
+    {
+        "value": "19",
+        "name": "Aéronautique"
+    },
+    {
+        "value": "20",
+        "name": "Agro-alimentaire et alimentation"
+    },
+    {
+        "value": "21",
+        "name": "Batterie, générateur et groupe électrogènes"
+    },
+    {
+        "value": "22",
+        "name": "Chimie et pétrochimie"
+    },
+    {
+        "value": "23",
+        "name": "Pièces détachées et pièces de rechange auto"
+    },
+    {
+        "value": "24",
+        "name": "Équipement médical et laboratoire"
+    },
+    {
+        "value": "25",
+        "name": "Formations et certifications"
+    },
+    {
+        "value": "26",
+        "name": "Industrie de la cellulose, papier, carton et emballage"
+    },
+    {
+        "value": "27",
+        "name": "Industrie manufacturière"
+    },
+    {
+        "value": "28",
+        "name": "Industrie plastique et caoutchouc"
+    },
+    {
+        "value": "29",
+        "name": "Industrie sidérurgique, métallurgique"
+    },
+    {
+        "value": "30",
+        "name": "Hygiène & environnement"
+    },
+    {
+        "value": "31",
+        "name": "Bureautique, ameublement et mobilier"
+    },
+    {
+        "value": "32",
+        "name": "Matériaux de construction et de finition"
+    },
+    {
+        "value": "33",
+        "name": "Médical et paramédical"
+    },
+    {
+        "value": "34",
+        "name": "Pharmacie et parapharmaceutique"
+    },
+    {
+        "value": "35",
+        "name": "Port, aéroport et transit"
+    },
+    {
+        "value": "36",
+        "name": "PVC, Allumium, menuiserie bois et verrerie"
+    },
+    {
+        "value": "37",
+        "name": "Quincaillerie générale"
+    },
+    {
+        "value": "38",
+        "name": "Restauration et hôtellerie"
+    },
+    {
+        "value": "39",
+        "name": "Gestion, comptabilité et commissaire aux comptes"
+    },
+    {
+        "value": "40",
+        "name": "Sport et loisirs"
+    },
+    {
+        "value": "41",
+        "name": "Télécommunication"
+    },
+    {
+        "value": "42",
+        "name": "Pneumatique et mécanique"
+    },
+    {
+        "value": "43",
+        "name": "Autres"
+    },
+    {
+        "value": "44",
+        "name": "Électroménager"
+    },
+    {
+        "value": "45",
+        "name": "Énergie et services pétroliers"
+    },
+    {
+        "value": "46",
+        "name": "Équipements industriels"
+    },
+    {
+        "value": "47",
+        "name": "Équipements scientifiques"
+    },
+    {
+        "value": "48",
+        "name": "Industrie électrique électrotechnique et équipements"
+    },
+    {
+        "value": "49",
+        "name": "Travaux de montage de charpente métallique"
+    },
+    {
+        "value": "50",
+        "name": "Automatismes et informatique industrielle"
+    },
+    {
+        "value": "51",
+        "name": "Décoration intérieur, extérieur et design"
+    },
+    {
+        "value": "52",
+        "name": "Trousseaux et mobilier scolaire"
+    },
+    {
+        "value": "53",
+        "name": "Mine, agrégats et granulats"
+    },
+    {
+        "value": "54",
+        "name": "Ustensile et mobilier de cuisine"
+    },
+    {
+        "value": "55",
+        "name": "Logiciels et matériel informatique"
+    }
+]

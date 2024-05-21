@@ -11,10 +11,10 @@ interface AnnonceCardProps {
   location: string;
   date: string;
   description: string;
-  types: string[];
+  sectors: string[];
 }
 
-export function AnnonceCard({ id, title, location, date, description, types }: AnnonceCardProps) {
+export function AnnonceCard({ id, title, location, date, description, sectors }: AnnonceCardProps) {
   return (
     <Card className="w-[350px] flex flex-col justify-between">
       <CardHeader>
@@ -43,9 +43,9 @@ export function AnnonceCard({ id, title, location, date, description, types }: A
           </div>
           <div className="w-full">
             <h4 className="font-bold">Secteur(s):</h4>
-            {types.map((type, index) => (
+            {sectors.map((sector, index) => (
               <p key={index} className="py-1 text-end">
-                {type}
+                {sector}
               </p>
             ))}
           </div>

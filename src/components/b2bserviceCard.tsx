@@ -11,7 +11,7 @@ interface B2BServiceCardProps {
   description: string;
   wilaya: string;
   date: string;
-  types: string[];
+  sectors: string[];
   contact: {
     nom: string;
     email: string;
@@ -25,7 +25,7 @@ export function B2BServiceCard({
   description,
   wilaya,
   date,
-  types,
+  sectors,
   contact,
   documents
 }: B2BServiceCardProps) {
@@ -57,22 +57,22 @@ export function B2BServiceCard({
           </div>
           <div className="w-full">
             <h4 className="font-bold">Secteur(s):</h4>
-            {types.map((type, index) => (
+            {sectors.map((sector, index) => (
               <p key={index} className="py-1 text-end">
-                {type}
+                {sector}
               </p>
             ))}
           </div>
           <div className="w-full">
             <h4 className="font-bold">Contact :</h4>
-            <p>{contact.nom}</p>
-            <p>{contact.email}</p>
-            <p>{contact.telephone}</p>
+            <p className="text-end">{contact.nom}</p>
+            <p className="text-end">{contact.email}</p>
+            <p className="text-end">{contact.telephone}</p>
           </div>
           <div className="w-full">
             <h4 className="font-bold">Documents :</h4>
             {documents.map((doc, index) => (
-              <a key={index} href={`/path/to/documents/${doc}`} className="text-blue-500 hover:underline">
+              <a key={index} href={`/path/to/documents/${doc}`} className="text-blue-500 hover:underline flex flex-col text-end">
                 {doc}
               </a>
             ))}

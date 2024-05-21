@@ -12,7 +12,7 @@ interface Annonce {
   wilaya: string;
   date: string;
   description: string;
-  types: string[]
+  sectors: string[]
 }
 
 const Annonce = () => {
@@ -37,7 +37,7 @@ const Annonce = () => {
           description={annonce.description}
           location={annonce.wilaya}
           date={annonce.date}
-          types={annonce.types}
+          sectors={annonce.sectors}
         />
       );
   
@@ -59,7 +59,7 @@ const Annonce = () => {
       <div className='flex flex-wrap gap-2'>
         <SelectDemoType />
         <SelectDemo placeholder='Wilaya' Items='Wilaya.json' />
-        <SelectDemo placeholder='Secteur' />
+        <SelectDemo placeholder='Secteur' Items='secteurs.json'/>
         <DatePickerDemo placeholder='Date publication Minimum' />
         <DatePickerDemo placeholder='Date publication Maximum' />
         <Button className='w-max'>Filtrer</Button>

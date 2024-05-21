@@ -12,7 +12,7 @@ interface Annonce {
   wilaya: string;
   date: string;
   description: string;
-  types: string[];
+  sectors: string[];
   contact: {
     nom: string;
     email: string;
@@ -34,7 +34,7 @@ const B2BService = () => {
   return (
     <div className='min-h-screen flex flex-col items-center py-2 px-3 md:py-10 overflow-hidden'>
       <div className='flex flex-wrap gap-2'>
-        <SelectDemo placeholder='Secteur'/>
+        <SelectDemo placeholder='Secteur' Items='secteurs.json'/>
         <Button className='w-max'>Filtrer</Button>
       </div>
       <div className="flex flex-col gap-4 md:px-40 lg:px-80 my-10 w-full">
@@ -46,7 +46,7 @@ const B2BService = () => {
             description={annonce.description}
             wilaya={annonce.wilaya}
             date={annonce.date}
-            types={annonce.types}
+            sectors={annonce.sectors}
             contact={annonce.contact}
             documents={annonce.documents}
           />

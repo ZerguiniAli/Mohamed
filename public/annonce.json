@@ -1,162 +1,163 @@
 [
-  {
-      "id": 1,
-      "titre": "Annonce 1",
-      "description": "Description de l'annonce 1.",
-      "wilaya": "Adrar",
-      "date": "2024-05-01",
-      "types": ["L’appel d’offres national ouvert", "Concours national ouvert"]
-  },
-  {
-      "id": 2,
-      "titre": "Annonce 2",
-      "description": "Description de l'annonce 2.",
-      "wilaya": "Chlef",
-      "date": "2024-05-02",
-      "types": ["Concours national ouvert", "Consultation nationale ouverte"]
-  },
-  {
-      "id": 3,
-      "titre": "Annonce 3",
-      "description": "Description de l'annonce 3.",
-      "wilaya": "Laghouat",
-      "date": "2024-05-03",
-      "types": ["L’appel d’offres national ouvert", "Présélection nationale ouverte"]
-  },
-  {
-      "id": 4,
-      "titre": "Annonce 4",
-      "description": "Description de l'annonce 4.",
-      "wilaya": "Oum El Bouaghi",
-      "date": "2024-05-04",
-      "types": ["L’appel d’offres international ouvert", "Concours international ouvert"]
-  },
-  {
-      "id": 5,
-      "titre": "Annonce 5",
-      "description": "Description de l'annonce 5.",
-      "wilaya": "Batna",
-      "date": "2024-05-05",
-      "types": ["Consultation nationale ouverte"]
-  },
-  {
-      "id": 6,
-      "titre": "Annonce 6",
-      "description": "Description de l'annonce 6.",
-      "wilaya": "Béjaïa",
-      "date": "2024-05-06",
-      "types": ["Consultation internationale ouverte"]
-  },
-  {
-      "id": 7,
-      "titre": "Annonce 7",
-      "description": "Description de l'annonce 7.",
-      "wilaya": "Biskra",
-      "date": "2024-05-07",
-      "types": ["Consultation internationale restreinte"]
-  },
-  {
-      "id": 8,
-      "titre": "Annonce 8",
-      "description": "Description de l'annonce 8.",
-      "wilaya": "Béchar",
-      "date": "2024-05-08",
-      "types": ["Consultation nationale et internationale ouverte"]
-  },
-  {
-      "id": 9,
-      "titre": "Annonce 9",
-      "description": "Description de l'annonce 9.",
-      "wilaya": "Blida",
-      "date": "2024-05-09",
-      "types": ["Consultation nationale et internationale restreinte"]
-  },
-  {
-      "id": 10,
-      "titre": "Annonce 10",
-      "description": "Description de l'annonce 10.",
-      "wilaya": "Bouira",
-      "date": "2024-05-10",
-      "types": ["Présélection nationale ouverte", "Consultation nationale ouverte"]
-  },
-  {
-      "id": 11,
-      "titre": "Annonce 11",
-      "description": "Description de l'annonce 11.",
-      "wilaya": "Tamanrasset",
-      "date": "2024-05-11",
-      "types": ["Concours international restreint"]
-  },
-  {
-      "id": 12,
-      "titre": "Annonce 12",
-      "description": "Description de l'annonce 12.",
-      "wilaya": "Tébessa",
-      "date": "2024-05-12",
-      "types": ["Présélection nationale ouverte", "Concours national ouvert"]
-  },
-  {
-      "id": 13,
-      "titre": "Annonce 13",
-      "description": "Description de l'annonce 13.",
-      "wilaya": "Tlemcen",
-      "date": "2024-05-13",
-      "types": ["L’appel d’offres international restreint"]
-  },
-  {
-      "id": 14,
-      "titre": "Annonce 14",
-      "description": "Description de l'annonce 14.",
-      "wilaya": "Tiaret",
-      "date": "2024-05-14",
-      "types": ["Consultation nationale et internationale restreinte"]
-  },
-  {
-      "id": 15,
-      "titre": "Annonce 15",
-      "description": "Description de l'annonce 15.",
-      "wilaya": "Tizi Ouzou",
-      "date": "2024-05-15",
-      "types": ["L’appel d’offres national et international ouvert"]
-  },
-  {
-      "id": 16,
-      "titre": "Annonce 16",
-      "description": "Description de l'annonce 16.",
-      "wilaya": "Alger",
-      "date": "2024-05-16",
-      "types": ["Consultation nationale et internationale ouverte", "Concours national et international ouvert"]
-  },
-  {
-      "id": 17,
-      "titre": "Annonce 17",
-      "description": "Description de l'annonce 17.",
-      "wilaya": "Djelfa",
-      "date": "2024-05-17",
-      "types": ["Consultation internationale ouverte", "Présélection nationale ouverte"]
-  },
-  {
-      "id": 18,
-      "titre": "Annonce 18",
-      "description": "Description de l'annonce 18.",
-      "wilaya": "Jijel",
-      "date": "2024-05-18",
-      "types": ["Concours national et international restreint"]
-  },
-  {
-      "id": 19,
-      "titre": "Annonce 19",
-      "description": "Description de l'annonce 19.",
-      "wilaya": "Sétif",
-      "date": "2024-05-19",
-      "types": ["Présélection internationale ouverte"]
-  },
-  {
-      "id": 20,
-      "titre": "Annonce 20",
-      "description": "Description de l'annonce 20.",
-      "wilaya": "Saïda",
-      "date": "2024-05-20",
-      "types": ["L’appel d’offres national restreint", "Concours national restreint"]
-  }
+    {
+        "id": 1,
+        "titre": "Annonce 1",
+        "description": "Description de l'annonce 1.",
+        "wilaya": "Adrar",
+        "date": "2024-05-01",
+        "sectors": ["Bâtiment et génie civil", "Étude et consulting"]
+    },
+    {
+        "id": 2,
+        "titre": "Annonce 2",
+        "description": "Description de l'annonce 2.",
+        "wilaya": "Chlef",
+        "date": "2024-05-02",
+        "sectors": ["Agriculture, élevage, forêt et pêche", "Étude et consulting", "Télécommunication"]
+    },
+    {
+        "id": 3,
+        "titre": "Annonce 3",
+        "description": "Description de l'annonce 3.",
+        "wilaya": "Laghouat",
+        "date": "2024-05-03",
+        "sectors": ["Architecture et urbanisme", "Étude et consulting"]
+    },
+    {
+        "id": 4,
+        "titre": "Annonce 4",
+        "description": "Description de l'annonce 4.",
+        "wilaya": "Oum El Bouaghi",
+        "date": "2024-05-04",
+        "sectors": ["Bâtiment et génie civil"]
+    },
+    {
+        "id": 5,
+        "titre": "Annonce 5",
+        "description": "Description de l'annonce 5.",
+        "wilaya": "Batna",
+        "date": "2024-05-05",
+        "sectors": ["Bâtiment et génie civil"]
+    },
+    {
+        "id": 6,
+        "titre": "Annonce 6",
+        "description": "Description de l'annonce 6.",
+        "wilaya": "Béjaïa",
+        "date": "2024-05-06",
+        "sectors": ["Étude et consulting"]
+    },
+    {
+        "id": 7,
+        "titre": "Annonce 7",
+        "description": "Description de l'annonce 7.",
+        "wilaya": "Biskra",
+        "date": "2024-05-07",
+        "sectors": ["Étude et consulting"]
+    },
+    {
+        "id": 8,
+        "titre": "Annonce 8",
+        "description": "Description de l'annonce 8.",
+        "wilaya": "Béchar",
+        "date": "2024-05-08",
+        "sectors": ["Froid, climatisation, chauffage et plomberies"]
+    },
+    {
+        "id": 9,
+        "titre": "Annonce 9",
+        "description": "Description de l'annonce 9.",
+        "wilaya": "Blida",
+        "date": "2024-05-09",
+        "sectors": ["Étude et consulting"]
+    },
+    {
+        "id": 10,
+        "titre": "Annonce 10",
+        "description": "Description de l'annonce 10.",
+        "wilaya": "Bouira",
+        "date": "2024-05-10",
+        "sectors": ["Architecture et urbanisme", "Étude et consulting", "Télécommunication"]
+    },
+    {
+        "id": 11,
+        "titre": "Annonce 11",
+        "description": "Description de l'annonce 11.",
+        "wilaya": "Tamanrasset",
+        "date": "2024-05-11",
+        "sectors": ["Transport, engin et logistique"]
+    },
+    {
+        "id": 12,
+        "titre": "Annonce 12",
+        "description": "Description de l'annonce 12.",
+        "wilaya": "Tébessa",
+        "date": "2024-05-12",
+        "sectors": ["Architecture et urbanisme", "Étude et consulting"]
+    },
+    {
+        "id": 13,
+        "titre": "Annonce 13",
+        "description": "Description de l'annonce 13.",
+        "wilaya": "Tlemcen",
+        "date": "2024-05-13",
+        "sectors": ["Autres"]
+    },
+    {
+        "id": 14,
+        "titre": "Annonce 14",
+        "description": "Description de l'annonce 14.",
+        "wilaya": "Tiaret",
+        "date": "2024-05-14",
+        "sectors": ["Étude et consulting"]
+    },
+    {
+        "id": 15,
+        "titre": "Annonce 15",
+        "description": "Description de l'annonce 15.",
+        "wilaya": "Tizi Ouzou",
+        "date": "2024-05-15",
+        "sectors": ["Bâtiment et génie civil"]
+    },
+    {
+        "id": 16,
+        "titre": "Annonce 16",
+        "description": "Description de l'annonce 16.",
+        "wilaya": "Alger",
+        "date": "2024-05-16",
+        "sectors": ["Agriculture, élevage, forêt et pêche", "Étude et consulting", "Transport, engin et logistique"]
+    },
+    {
+        "id": 17,
+        "titre": "Annonce 17",
+        "description": "Description de l'annonce 17.",
+        "wilaya": "Djelfa",
+        "date": "2024-05-17",
+        "sectors": ["Étude et consulting"]
+    },
+    {
+        "id": 18,
+        "titre": "Annonce 18",
+        "description": "Description de l'annonce 18.",
+        "wilaya": "Jijel",
+        "date": "2024-05-18",
+        "sectors": ["Transport, engin et logistique"]
+    },
+    {
+        "id": 19,
+        "titre": "Annonce 19",
+        "description": "Description de l'annonce 19.",
+        "wilaya": "Sétif",
+        "date": "2024-05-19",
+        "sectors": ["Autres"]
+    },
+    {
+        "id": 20,
+        "titre": "Annonce 20",
+        "description": "Description de l'annonce 20.",
+        "wilaya": "Saïda",
+        "date": "2024-05-20",
+        "sectors": ["Bâtiment et génie civil"]
+    }
 ]
+    
