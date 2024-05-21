@@ -55,7 +55,7 @@ const Annonce = () => {
   };
   
   return (
-    <div className='flex flex-col justify-center items-center py-2 px-3 md:py-10 overflow-hidden'>
+    <div className='min-h-screen flex flex-col items-center py-2 px-3 md:py-10 overflow-hidden'>
       <div className='flex flex-wrap gap-2'>
         <SelectDemoType />
         <SelectDemo placeholder='Wilaya' Items='Wilaya.json' />

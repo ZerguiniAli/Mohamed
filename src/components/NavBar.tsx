@@ -52,6 +52,12 @@ const NavBar = () => {
                   Annonce
                 </h1>
                 <h1
+                  className={getClassNames('/b2bservice')}
+                  onClick={handleOnclick('/b2bservice')}
+                >
+                  Service B2B
+                </h1>
+                <h1
                   className={getClassNames('/offer')}
                   onClick={handleOnclick('/offer')}
                 >
@@ -109,6 +115,12 @@ const NavBar = () => {
             onClick={handleOnclick('/annonce')}
           >
             Annonce
+          </h1>
+          <h1
+            className={getClassNames('/b2bservice')}
+            onClick={handleOnclick('/b2bservice')}
+          >
+            Service B2B
           </h1>
           <h1
             className={getClassNames('/offer')}

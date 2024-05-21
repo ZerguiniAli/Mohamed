@@ -1,0 +1,215 @@
+{
+    "annonces": [
+      {
+        "id": 1,
+        "titre": "Annonce 1",
+        "description": "Description de l'annonce 1.",
+        "wilaya": "Adrar",
+        "date": "2024-05-01",
+        "types": ["L’appel d’offres national ouvert", "Concours national ouvert"],
+        "contact": {
+          "nom": "Entreprise A",
+          "email": "contact@entrepriseA.com",
+          "telephone": "0123456789"
+        },
+        "documents": ["doc1.pdf", "doc2.pdf"]
+      },
+      {
+        "id": 2,
+        "titre": "Annonce 2",
+        "description": "Description de l'annonce 2.",
+        "wilaya": "Chlef",
+        "date": "2024-05-02",
+        "types": ["Concours national ouvert", "Consultation nationale ouverte"],
+        "contact": {
+          "nom": "Entreprise B",
+          "email": "contact@entrepriseB.com",
+          "telephone": "0987654321"
+        },
+        "documents": ["doc3.pdf"]
+      },
+      {
+        "id": 3,
+        "titre": "Annonce 3",
+        "description": "Description de l'annonce 3.",
+        "wilaya": "Laghouat",
+        "date": "2024-05-03",
+        "types": ["L’appel d’offres national ouvert", "Présélection nationale ouverte"],
+        "contact": {
+          "nom": "Entreprise C",
+          "email": "contact@entrepriseC.com",
+          "telephone": "0234567891"
+        },
+        "documents": []
+      },
+      {
+        "id": 4,
+        "titre": "Annonce 4",
+        "description": "Description de l'annonce 4.",
+        "wilaya": "Oum El Bouaghi",
+        "date": "2024-05-04",
+        "types": ["L’appel d’offres international ouvert", "Concours international ouvert"],
+        "contact": {
+          "nom": "Entreprise D",
+          "email": "contact@entrepriseD.com",
+          "telephone": "0345678912"
+        },
+        "documents": ["doc4.pdf", "doc5.pdf"]
+      },
+      {
+        "id": 5,
+        "titre": "Annonce 5",
+        "description": "Description de l'annonce 5.",
+        "wilaya": "Batna",
+        "date": "2024-05-05",
+        "types": ["Consultation nationale ouverte"],
+        "contact": {
+          "nom": "Entreprise E",
+          "email": "contact@entrepriseE.com",
+          "telephone": "0456789123"
+        },
+        "documents": ["doc6.pdf"]
+      },
+      {
+        "id": 6,
+        "titre": "Annonce 6",
+        "description": "Description de l'annonce 6.",
+        "wilaya": "Béjaïa",
+        "date": "2024-05-06",
+        "types": ["Consultation internationale ouverte"],
+        "contact": {
+          "nom": "Entreprise F",
+          "email": "contact@entrepriseF.com",
+          "telephone": "0567891234"
+        },
+        "documents": []
+      },
+      {
+        "id": 7,
+        "titre": "Annonce 7",
+        "description": "Description de l'annonce 7.",
+        "wilaya": "Biskra",
+        "date": "2024-05-07",
+        "types": ["Consultation internationale restreinte"],
+        "contact": {
+          "nom": "Entreprise G",
+          "email": "contact@entrepriseG.com",
+          "telephone": "0678912345"
+        },
+        "documents": ["doc7.pdf", "doc8.pdf"]
+      },
+      {
+        "id": 8,
+        "titre": "Annonce 8",
+        "description": "Description de l'annonce 8.",
+        "wilaya": "Béchar",
+        "date": "2024-05-08",
+        "types": ["Consultation nationale et internationale ouverte"],
+        "contact": {
+          "nom": "Entreprise H",
+          "email": "contact@entrepriseH.com",
+          "telephone": "0789123456"
+        },
+        "documents": ["doc9.pdf"]
+      },
+      {
+        "id": 9,
+        "titre": "Annonce 9",
+        "description": "Description de l'annonce 9.",
+        "wilaya": "Blida",
+        "date": "2024-05-09",
+        "types": ["Consultation nationale et internationale restreinte"],
+        "contact": {
+          "nom": "Entreprise I",
+          "email": "contact@entrepriseI.com",
+          "telephone": "0891234567"
+        },
+        "documents": []
+      },
+      {
+        "id": 10,
+        "titre": "Annonce 10",
+        "description": "Description de l'annonce 10.",
+        "wilaya": "Bouira",
+        "date": "2024-05-10",
+        "types": ["Présélection nationale ouverte", "Consultation nationale ouverte"],
+        "contact": {
+          "nom": "Entreprise J",
+          "email": "contact@entrepriseJ.com",
+          "telephone": "0912345678"
+        },
+        "documents": ["doc10.pdf", "doc11.pdf"]
+      },
+      {
+        "id": 11,
+        "titre": "Annonce 11",
+        "description": "Description de l'annonce 11.",
+        "wilaya": "Tamanrasset",
+        "date": "2024-05-11",
+        "types": ["Concours international restreint"],
+        "contact": {
+          "nom": "Entreprise K",
+          "email": "contact@entrepriseK.com",
+          "telephone": "1012345678"
+        },
+        "documents": []
+      },
+      {
+        "id": 12,
+        "titre": "Annonce 12",
+        "description": "Description de l'annonce 12.",
+        "wilaya": "Tébessa",
+        "date": "2024-05-12",
+        "types": ["Présélection nationale ouverte", "Concours national ouvert"],
+        "contact": {
+          "nom": "Entreprise L",
+          "email": "contact@entrepriseL.com",
+          "telephone": "1123456789"
+        },
+        "documents": ["doc12.pdf"]
+      },
+      {
+        "id": 13,
+        "titre": "Annonce 13",
+        "description": "Description de l'annonce 13.",
+        "wilaya": "Tlemcen",
+        "date": "2024-05-13",
+        "types": ["L’appel d’offres international restreint"],
+        "contact": {
+          "nom": "Entreprise M",
+          "email": "contact@entrepriseM.com",
+          "telephone": "1234567890"
+        },
+        "documents": []
+      },
+      {
+        "id": 14,
+        "titre": "Annonce 14",
+        "description": "Description de l'annonce 14.",
+        "wilaya": "Tiaret",
+        "date": "2024-05-14",
+        "types": ["Consultation nationale et internationale restreinte"],
+        "contact": {
+          "nom": "Entreprise N",
+          "email": "contact@entrepriseN.com",
+          "telephone": "1345678901"
+        },
+        "documents": ["doc13.pdf", "doc14.pdf"]
+      },
+      {
+        "id": 15,
+        "titre": "Annonce 15",
+        "description": "Description de l'annonce 15.",
+        "wilaya": "Tizi Ouzou",
+        "date": "2024-05-15",
+        "types": ["L’appel d’offres national et international ouvert"],
+        "contact": {
+          "nom": "Entreprise O",
+          "email": "contact@entrepriseO.com",
+          "telephone": "1456789012"
+        },
+        "documents": ["doc15.pdf"]
+      }
+    ]
+  }
+  
