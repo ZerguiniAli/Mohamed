@@ -37,7 +37,7 @@ const B2BService = () => {
         <SelectDemo placeholder='Secteur'/>
         <Button className='w-max'>Filtrer</Button>
       </div>
-      <div className="flex flex-col gap md:px-40 lg:px-80 my-10 w-full">
+      <div className="flex flex-col gap-4 md:px-40 lg:px-80 my-10 w-full">
         {annonces.map((annonce) => (
           <B2BServiceCard
             key={annonce.id}
