@@ -2,213 +2,198 @@
   "annonces": [
       {
           "id": 1,
-          "titre": "Annonce 1",
-          "description": "Description de l'annonce 1.",
+          "titre": "Enterprise 1",
+          "description": "Description de l'enterprise 1.",
           "wilaya": "Adrar",
-          "date": "2024-05-01",
           "sectors": ["Tourisme et voyage", "Étude et consulting"],
           "contact": {
-              "nom": "Entreprise A",
-              "email": "contact@entrepriseA.com",
+              "nom": "Enterprise A",
+              "email": "contact@enterpriseA.com",
               "telephone": "0123456789"
           },
           "documents": ["doc1.pdf", "doc2.pdf"]
       },
       {
           "id": 2,
-          "titre": "Annonce 2",
-          "description": "Description de l'annonce 2.",
+          "titre": "Enterprise 2",
+          "description": "Description de l'enterprise 2.",
           "wilaya": "Chlef",
-          "date": "2024-05-02",
           "sectors": ["Impression, édition et communication", "Consultation nationale ouverte"],
           "contact": {
-              "nom": "Entreprise B",
-              "email": "contact@entrepriseB.com",
+              "nom": "Enterprise B",
+              "email": "contact@enterpriseB.com",
               "telephone": "0987654321"
           },
           "documents": ["doc3.pdf"]
       },
       {
           "id": 3,
-          "titre": "Annonce 3",
-          "description": "Description de l'annonce 3.",
+          "titre": "Enterprise 3",
+          "description": "Description de l'enterprise 3.",
           "wilaya": "Laghouat",
-          "date": "2024-05-03",
           "sectors": ["Étude et consulting", "Architecture et urbanisme"],
           "contact": {
-              "nom": "Entreprise C",
-              "email": "contact@entrepriseC.com",
+              "nom": "Enterprise C",
+              "email": "contact@enterpriseC.com",
               "telephone": "0234567891"
           },
           "documents": []
       },
       {
           "id": 4,
-          "titre": "Annonce 4",
-          "description": "Description de l'annonce 4.",
+          "titre": "Enterprise 4",
+          "description": "Description de l'enterprise 4.",
           "wilaya": "Oum El Bouaghi",
-          "date": "2024-05-04",
           "sectors": ["Travaux publics", "Équipements pour les collectivités et équipements de ville"],
           "contact": {
-              "nom": "Entreprise D",
-              "email": "contact@entrepriseD.com",
+              "nom": "Enterprise D",
+              "email": "contact@enterpriseD.com",
               "telephone": "0345678912"
           },
           "documents": ["doc4.pdf", "doc5.pdf"]
       },
       {
           "id": 5,
-          "titre": "Annonce 5",
-          "description": "Description de l'annonce 5.",
+          "titre": "Enterprise 5",
+          "description": "Description de l'enterprise 5.",
           "wilaya": "Batna",
-          "date": "2024-05-05",
           "sectors": ["Consultation nationale ouverte"],
           "contact": {
-              "nom": "Entreprise E",
-              "email": "contact@entrepriseE.com",
+              "nom": "Enterprise E",
+              "email": "contact@enterpriseE.com",
               "telephone": "0456789123"
           },
           "documents": ["doc6.pdf"]
       },
       {
           "id": 6,
-          "titre": "Annonce 6",
-          "description": "Description de l'annonce 6.",
+          "titre": "Enterprise 6",
+          "description": "Description de l'enterprise 6.",
           "wilaya": "Béjaïa",
-          "date": "2024-05-06",
           "sectors": ["Consultation internationale ouverte"],
           "contact": {
-              "nom": "Entreprise F",
-              "email": "contact@entrepriseF.com",
+              "nom": "Enterprise F",
+              "email": "contact@enterpriseF.com",
               "telephone": "0567891234"
           },
           "documents": []
       },
       {
           "id": 7,
-          "titre": "Annonce 7",
-          "description": "Description de l'annonce 7.",
+          "titre": "Enterprise 7",
+          "description": "Description de l'enterprise 7.",
           "wilaya": "Biskra",
-          "date": "2024-05-07",
           "sectors": ["Transport, engin et logistique", "Équipements pour les collectivités et équipements de ville"],
           "contact": {
-              "nom": "Entreprise G",
-              "email": "contact@entrepriseG.com",
+              "nom": "Enterprise G",
+              "email": "contact@enterpriseG.com",
               "telephone": "0678912345"
           },
           "documents": ["doc7.pdf", "doc8.pdf"]
       },
       {
           "id": 8,
-          "titre": "Annonce 8",
-          "description": "Description de l'annonce 8.",
+          "titre": "Enterprise 8",
+          "description": "Description de l'enterprise 8.",
           "wilaya": "Béchar",
-          "date": "2024-05-08",
           "sectors": ["Étude et consulting", "Sécurité"],
           "contact": {
-              "nom": "Entreprise H",
-              "email": "contact@entrepriseH.com",
+              "nom": "Enterprise H",
+              "email": "contact@enterpriseH.com",
               "telephone": "0789123456"
           },
           "documents": ["doc9.pdf"]
       },
       {
           "id": 9,
-          "titre": "Annonce 9",
-          "description": "Description de l'annonce 9.",
+          "titre": "Enterprise 9",
+          "description": "Description de l'enterprise 9.",
           "wilaya": "Blida",
-          "date": "2024-05-09",
           "sectors": ["Consultation nationale et internationale restreinte"],
           "contact": {
-              "nom": "Entreprise I",
-              "email": "contact@entrepriseI.com",
+              "nom": "Enterprise I",
+              "email": "contact@enterpriseI.com",
               "telephone": "0891234567"
           },
           "documents": []
       },
       {
           "id": 10,
-          "titre": "Annonce 10",
-          "description": "Description de l'annonce 10.",
+          "titre": "Enterprise 10",
+          "description": "Description de l'enterprise 10.",
           "wilaya": "Bouira",
-          "date": "2024-05-10",
           "sectors": ["Travaux publics", "Consultation nationale ouverte"],
           "contact": {
-              "nom": "Entreprise J",
-              "email": "contact@entrepriseJ.com",
+              "nom": "Enterprise J",
+              "email": "contact@enterpriseJ.com",
               "telephone": "0912345678"
           },
           "documents": ["doc10.pdf", "doc11.pdf"]
       },
       {
           "id": 11,
-          "titre": "Annonce 11",
-          "description": "Description de l'annonce 11.",
+          "titre": "Enterprise 11",
+          "description": "Description de l'enterprise 11.",
           "wilaya": "Tamanrasset",
-          "date": "2024-05-11",
           "sectors": ["Concours international restreint"],
           "contact": {
-              "nom": "Entreprise K",
-              "email": "contact@entrepriseK.com",
+              "nom": "Enterprise K",
+              "email": "contact@enterpriseK.com",
               "telephone": "1012345678"
           },
           "documents": []
       },
       {
           "id": 12,
-          "titre": "Annonce 12",
-          "description": "Description de l'annonce 12.",
+          "titre": "Enterprise 12",
+          "description": "Description de l'enterprise 12.",
           "wilaya": "Tébessa",
-          "date": "2024-05-12",
           "sectors": ["Étude et consulting", "Impression, édition et communication"],
           "contact": {
-              "nom": "Entreprise L",
-              "email": "contact@entrepriseL.com",
+              "nom": "Enterprise L",
+              "email": "contact@enterpriseL.com",
               "telephone": "1123456789"
           },
           "documents": ["doc12.pdf"]
       },
       {
           "id": 13,
-          "titre": "Annonce 13",
-          "description": "Description de l'annonce 13.",
+          "titre": "Enterprise 13",
+          "description": "Description de l'enterprise 13.",
           "wilaya": "Tlemcen",
-          "date": "2024-05-13",
           "sectors": ["Étude et consulting", "Architecture et urbanisme"],
           "contact": {
-              "nom": "Entreprise M",
-              "email": "contact@entrepriseM.com",
+              "nom": "Enterprise M",
+              "email": "contact@enterpriseM.com",
               "telephone": "1234567890"
           },
           "documents": []
       },
       {
           "id": 14,
-          "titre": "Annonce 14",
-          "description": "Description de l'annonce 14.",
+          "titre": "Enterprise 14",
+          "description": "Description de l'enterprise 14.",
           "wilaya": "Tiaret",
-          "date": "2024-05-14",
           "sectors": ["Consultation nationale et internationale restreinte", "Bâtiment et génie civil"],
           "contact": {
-              "nom": "Entreprise N",
-              "email": "contact@entrepriseN.com",
-              "telephone": "1345678901"
-          },
-          "documents": ["doc13.pdf", "doc14.pdf"]
-      },
-      {
-          "id": 15,
-          "titre": "Annonce 15",
-          "description": "Description de l'annonce 15.",
-          "wilaya": "Tizi Ouzou",
-          "date": "2024-05-15",
-          "sectors": ["Étude et consulting", "Travaux publics"],
-          "contact": {
-              "nom": "Entreprise O",
-              "email": "contact@entrepriseO.com",
-              "telephone": "1456789012"
-          },
-          "documents": ["doc15.pdf"]
-      }
-  ]
-}
+            "nom": "Enterprise N",
+            "email": "contact@enterpriseNcom",
+            "telephone": "1345678901"
+            },
+            "documents": ["doc13.pdf", "doc14.pdf"]
+            },
+            {
+            "id": 15,
+            "titre": "Enterprise 15",
+            "description": "Description de l'enterprise 15.",
+            "wilaya": "Tizi Ouzou",
+            "sectors": ["Étude et consulting", "Travaux publics"],
+            "contact": {
+            "nom": "Enterprise O",
+            "email": "contact@enterpriseO.com",
+            "telephone": "1456789012"
+            },
+            "documents": ["doc15.pdf"]
+          }
+          ]
+          }

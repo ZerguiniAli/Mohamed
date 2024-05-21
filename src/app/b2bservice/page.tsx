@@ -10,7 +10,6 @@ interface Annonce {
   id: number;
   titre: string;
   wilaya: string;
-  date: string;
   description: string;
   sectors: string[];
   contact: {
@@ -45,7 +44,6 @@ const B2BService = () => {
             titre={annonce.titre}
             description={annonce.description}
             wilaya={annonce.wilaya}
-            date={annonce.date}
             sectors={annonce.sectors}
             contact={annonce.contact}
             documents={annonce.documents}

@@ -10,7 +10,6 @@ interface B2BServiceCardProps {
   titre: string;
   description: string;
   wilaya: string;
-  date: string;
   sectors: string[];
   contact: {
     nom: string;
@@ -24,7 +23,6 @@ export function B2BServiceCard({
   titre,
   description,
   wilaya,
-  date,
   sectors,
   contact,
   documents
@@ -42,13 +40,6 @@ export function B2BServiceCard({
               <h2 className="font-bold">Emplacement :</h2>
             </div>
             <p className="text-end">{wilaya}</p>
-          </div>
-          <div className="w-full flex flex-col justify-between">
-            <div className="flex gap-2">
-              <Image alt="calendar" src={calendar} className="w-6" />
-              <h2 className="font-bold">Date de péremption :</h2>
-            </div>
-            <p className="text-end">{date}</p>
           </div>
           <div className="py-2 px-2 rounded-lg bg-slate-100 w-full">
             <p className="text-center break-words">
