@@ -83,30 +83,7 @@ const NavBar = () => {
         } md:hidden transition-all duration-300 ease-in-out`}
       >
         <div className="px-2 pt-2 pb-3 sm:px-3">
-          <h1
-            className={getClassNames('/')}
-            onClick={handleOnclick('/')}
-          >
-            Accueil
-          </h1>
-          <h1
-            className={getClassNames('/annonce')}
-            onClick={handleOnclick('/annonce')}
-          >
-            Annonce
-          </h1>
-          <h1
-            className={getClassNames('/b2bservice')}
-            onClick={handleOnclick('/b2bservice')}
-          >
-            Service B2B
-          </h1>
-          <h1
-            className={getClassNames('/offer')}
-            onClick={handleOnclick('/offer')}
-          >
-            Nos offres
-          </h1>
+          <NavigationMenuDemo/>
         </div>
         <div className="pt-4 pb-3 border-t border-gray-200">
           <div className="flex items-center px-4">
