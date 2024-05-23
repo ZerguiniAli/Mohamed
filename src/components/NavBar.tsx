@@ -4,6 +4,7 @@ import React, { useState, MouseEvent } from 'react'
 import { useRouter } from 'next/navigation'
 import { ConnexionDialog } from './ConnexionDialog'
 import { InscriptionDialog } from './InscriptionDialog'
+import { NavigationMenuDemo } from './NavMenu'
 
 const NavBar = () => {
   const router = useRouter()
@@ -39,30 +40,8 @@ const NavBar = () => {
             </div>
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-10">
-                <h1
-                  className={getClassNames('/')}
-                  onClick={handleOnclick('/')}
-                >
-                  Accueil
-                </h1>
-                <h1
-                  className={getClassNames('/annonce')}
-                  onClick={handleOnclick('/annonce')}
-                >
-                  Annonce
-                </h1>
-                <h1
-                  className={getClassNames('/b2bservice')}
-                  onClick={handleOnclick('/b2bservice')}
-                >
-                  Service B2B
-                </h1>
-                <h1
-                  className={getClassNames('/offer')}
-                  onClick={handleOnclick('/offer')}
-                >
-                  Nos offres
-                </h1>
+               
+                <NavigationMenuDemo/>
               </div>
             </div>
           </div>

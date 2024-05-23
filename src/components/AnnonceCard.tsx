@@ -16,7 +16,7 @@ interface AnnonceCardProps {
 
 export function AnnonceCard({ id, title, location, date, description, sectors }: AnnonceCardProps) {
   return (
-    <Card className="w-[350px] flex flex-col justify-between">
+    <Card className="w-[350px] flex flex-col justify-between bg-slate-50">
       <CardHeader>
         <CardTitle>{title}</CardTitle>
       </CardHeader>
