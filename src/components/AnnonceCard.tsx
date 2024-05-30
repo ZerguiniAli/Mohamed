@@ -4,7 +4,6 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/componen
 import Image from "next/image";
 import position from "../../public/location.png";
 import calendar from "../../public/calendar.png";
-import { getSession } from "@/lib/session";
 
 interface AnnonceCardProps {
   id: Number;
@@ -18,8 +17,6 @@ interface AnnonceCardProps {
 
 export async function AnnonceCard({ id, title, wilaya, date_preemption, description, sectors }: AnnonceCardProps) {
 
-
-  const offer = await getSession()
 
   return (
     <Card className="w-[350px] flex flex-col justify-between">
