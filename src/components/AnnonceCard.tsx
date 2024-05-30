@@ -1,43 +1,25 @@
-'use client'
 import * as React from "react";
-import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import Image from "next/image";
 import position from "../../public/location.png";
 import calendar from "../../public/calendar.png";
-import toast from "react-hot-toast";
+import { getSession } from "@/lib/session";
 
 interface AnnonceCardProps {
-  id: number;
+  id: Number;
   title: string;
   wilaya: string;
   date_preemption: string;
   description: string;
   sectors: string;
-  type: string;
-  offer: string; // Add offer property to AnnonceCardProps
+  type:string;
 }
 
-export function AnnonceCard({ id, title, wilaya, date_preemption, description, sectors, offer }: AnnonceCardProps) {
-  const router = useRouter();
+export async function AnnonceCard({ id, title, wilaya, date_preemption, description, sectors }: AnnonceCardProps) {
 
-  // const handleButtonClick = () => {
-  //    router.push("/next-page");
-  // };
 
-  const handleOfferCheck = () => {
-    if (offer === "Normal") { // Check if offer is "normal"
-      alert("You need to buy demo or VIP.");
-      toast.error("You need to buy demo or VIP.");
-  
-      console.log("asd")
-    }
-  };
-
-  React.useEffect(() => {
-    handleOfferCheck();
-  }, []);
+  const offer = await getSession()
 
   return (
     <Card className="w-[350px] flex flex-col justify-between">
@@ -47,7 +29,7 @@ export function AnnonceCard({ id, title, wilaya, date_preemption, description, s
       <CardContent>
         <div className="grid w-full items-center gap-4">
           <div className="w-full flex flex-col justify-between">
-            <div className="flex gap-2">
+          <div className="flex gap-2">
               <Image alt="calendar" src={position} className="w-6" />
               <h2 className="font-bold">Emplacement :</h2>
             </div>
@@ -61,16 +43,18 @@ export function AnnonceCard({ id, title, wilaya, date_preemption, description, s
             <p className="text-end">{date_preemption}</p>
           </div>
           <div className="py-2 px-2 rounded-lg bg-slate-100 w-full">
-            <p className="text-center break-words">{description}</p>
+            <p className="text-center break-words">
+              {description}
+            </p>
           </div>
           <div className="w-full">
             <h4 className="font-bold">Secteur(s):</h4>
-            <p className="text-end">{sectors}</p>
+           <p className="text-end">{sectors}</p>
           </div>
         </div>
       </CardContent>
       <CardFooter className="flex justify-between">
-        <Button className="w-full" onClick={handleOfferCheck}>Voir les détails</Button>
+        <Button className="w-full" >Voir les détails</Button>
       </CardFooter>
     </Card>
   );
