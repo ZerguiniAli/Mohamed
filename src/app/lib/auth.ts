@@ -35,10 +35,12 @@ export const authOptions: NextAuthOptions = {
         if (!passwordMatch) {
           return null;
         }
+        // Include the offer information in the session object
         return {
           id: `${existingUser.id}`,
           name: existingUser.Nomutil,
           email: existingUser.Email,
+          offer: existingUser.offre, // Assuming the offer information is stored in 'offre' field
         };
       },
     }),
@@ -53,6 +55,8 @@ export const authOptions: NextAuthOptions = {
     async session({ session, token }) {
       if (token) {
         session.user.id = token.id as string;
+        // Include the offer information in the session object
+        session.user.offer = token.offer as string; // Assuming the offer information is stored in 'offer' field
       }
       return session;
     },

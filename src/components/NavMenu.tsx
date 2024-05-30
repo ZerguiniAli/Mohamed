@@ -14,72 +14,6 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
 
-const components: { title: string; href: string }[] = [
-  {
-    title: "Toutes les annonces",
-    href: "/annonce",
-  },
-  {
-    title: "Avis d’appel d’offres",
-    href: "/annonce",
-  },
-  {
-    title: "Avis d'attribution",
-    href: "/annonce",
-  },
-  {
-    title: "Avis d’annulation",
-    href: "/annonce",
-  },
-  {
-    title: "Avis de prorogation de délais",
-    href: "/annonce",
-  },
-  {
-    title: "Mise en demeure et résiliation",
-    href: "/annonce",
-  },
-  {
-    title: "Réponse à une mise en demeure",
-    href: "/annonce",
-  },
-  {
-    title: "Avis d'Infructuosité",
-    href: "/annonce",
-  },
-  {
-    title: "Consultation",
-    href: "/annonce",
-  },
-  {
-    title: "Concours",
-    href: "/annonce",
-  },
-  {
-    title: "Résultat de concours",
-    href: "/annonce",
-  },
-  {
-    title: "Adjudication et avis de vente aux enchères",
-    href: "/annonce",
-  },
-  {
-    title: "Appel à manifestation d'intérêt",
-    href: "/annonce",
-  },
-  {
-    title: "Avis de Préselection",
-    href: "/annonce",
-  },
-  {
-    title: "Correction - Rectification",
-    href: "/annonce",
-  },
-  {
-    title: "Avis de préqualification",
-    href: "/annonce",
-  }
-];
 
 export function NavigationMenuDemo() {
   return (
@@ -93,19 +27,11 @@ export function NavigationMenuDemo() {
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Annonces</NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
-              {components.map((component) => (
-                <ListItem
-                  key={component.title}
-                  title={component.title}
-                  href={component.href}
-                >
-                </ListItem>
-              ))}
-            </ul>
-          </NavigationMenuContent>
+          <Link href="/annonce" legacyBehavior passHref>
+            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+              Annonce
+            </NavigationMenuLink>
+          </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <Link href="/b2bservice" legacyBehavior passHref>

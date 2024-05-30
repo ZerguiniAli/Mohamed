@@ -10,13 +10,9 @@ interface B2BServiceCardProps {
   titre: string;
   description: string;
   wilaya: string;
-  sectors: string[];
-  contact: {
-    nom: string;
-    email: string;
-    telephone: string;
-  };
-  documents: string[];
+  sectors: string;
+  contact: String;
+  documents: string;
 }
 
 export function B2BServiceCard({
@@ -48,25 +44,15 @@ export function B2BServiceCard({
           </div>
           <div className="w-full">
             <h4 className="font-bold">Secteur(s):</h4>
-            {sectors.map((sector, index) => (
-              <p key={index} className="py-1 text-end">
-                {sector}
-              </p>
-            ))}
+            <p className="text-end">{sectors}</p>
           </div>
           <div className="w-full">
             <h4 className="font-bold">Contact :</h4>
-            <p className="text-end">{contact.nom}</p>
-            <p className="text-end">{contact.email}</p>
-            <p className="text-end">{contact.telephone}</p>
+            <p className="text-end">{contact}</p>
           </div>
           <div className="w-full">
             <h4 className="font-bold">Documents :</h4>
-            {documents.map((doc, index) => (
-              <a key={index} href={`/path/to/documents/${doc}`} className="text-blue-500 hover:underline flex flex-col text-end">
-                {doc}
-              </a>
-            ))}
+            <p className="text-end">{documents}</p>
           </div>
         </div>
       </CardContent>

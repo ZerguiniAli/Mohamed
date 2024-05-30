@@ -7,14 +7,10 @@ export async function GET(request: Request) {
     try {
         // Extract query parameters from the URL
         const url = new URL(request.url);
-        const wilaya = url.searchParams.get('wilaya');
-        const type = url.searchParams.get('type');
         const sectors = url.searchParams.getAll('sectors');  // Assuming sectors can be multiple values
 
         // Define the filters object with proper types
         const filters: Prisma.annonceWhereInput = {};
-        if (wilaya) filters.wilaya = wilaya;
-        if (type) filters.type = type;
         if (sectors.length > 0) filters.sectors = { in: sectors };
 
         // Fetch the filtered announces from the database
