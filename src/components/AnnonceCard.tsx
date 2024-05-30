@@ -4,7 +4,6 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/componen
 import Image from "next/image";
 import position from "../../public/location.png";
 import calendar from "../../public/calendar.png";
-import { useSession } from 'next-auth/react'; // Import useSession from Next.js
 
 interface AnnonceCardProps {
   id: Number;
@@ -13,25 +12,11 @@ interface AnnonceCardProps {
   date_preemption: string;
   description: string;
   sectors: string;
-  type: string;
+  type:string;
 }
 
 export function AnnonceCard({ id, title, wilaya, date_preemption, description, sectors }: AnnonceCardProps) {
-  const { data: session } = useSession(); // Initialize useSession hook
 
-  const handleDetailsClick = () => {
-    // Access session data here and check inscription offer
-    const offer = session?.user.offer; // Assuming 'inscription_offer' is stored in session
-
-    // Check if the offer is 'Normal', 'Demo', or 'VIP'
-    if (offer === 'Normal') {
-      alert("You need to buy VIP or demo offer.");
-    } else {
-      // If it's 'Demo' or 'VIP', navigate to the next page to show details
-      // router.push(`/details/${id}`); // You can use router for navigation if needed
-      alert(`Navigate to details page for id: ${id}`);
-    }
-  };
 
   return (
     <Card className="w-[350px] flex flex-col justify-between">
@@ -41,7 +26,7 @@ export function AnnonceCard({ id, title, wilaya, date_preemption, description, s
       <CardContent>
         <div className="grid w-full items-center gap-4">
           <div className="w-full flex flex-col justify-between">
-            <div className="flex gap-2">
+          <div className="flex gap-2">
               <Image alt="calendar" src={position} className="w-6" />
               <h2 className="font-bold">Emplacement :</h2>
             </div>
@@ -61,12 +46,12 @@ export function AnnonceCard({ id, title, wilaya, date_preemption, description, s
           </div>
           <div className="w-full">
             <h4 className="font-bold">Secteur(s):</h4>
-            <p className="text-end">{sectors}</p>
+           <p className="text-end">{sectors}</p>
           </div>
         </div>
       </CardContent>
       <CardFooter className="flex justify-between">
-        <Button className="w-full" onClick={handleDetailsClick}>Voir les détails</Button>
+        <Button className="w-full" >Voir les détails</Button>
       </CardFooter>
     </Card>
   );
