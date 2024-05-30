@@ -5,21 +5,23 @@ import { SelectDemo } from '@/components/Select';
 import { SelectDemoType } from '@/components/SelectedTYPE';
 import { Button } from '@/components/ui/button';
 import { AnnonceCard } from '@/components/AnnonceCard';
+import { NextResponse } from "next/server";
 
 interface Annonce {
-  id: string;
-  titre: string;
+  id: number;
+  title: string;
   wilaya: string;
-  date: string;
+  date_preemption: string;
   description: string;
-  sectors: string[]
+  type: string
+  sectors: string;
 }
 
 const Annonce = () => {
   const [annonces, setAnnonces] = useState<Annonce[]>([]);
 
   useEffect(() => {
-    fetch('annonce.json')
+    fetch('/api/annonce')
       .then(response => response.json())
       .then(data => setAnnonces(data));
   }, []);
@@ -31,14 +33,15 @@ const Annonce = () => {
     annonces.forEach((annonce, index) => {
       currentRow.push(
         <AnnonceCard
-          key={annonce.id}
-          id={annonce.id}
-          title={annonce.titre}
-          description={annonce.description}
-          location={annonce.wilaya}
-          date={annonce.date}
-          sectors={annonce.sectors}
-        />
+            key={annonce.id}
+            id={annonce.id}
+            title={annonce.title}
+            wilaya={annonce.wilaya}
+            date_preemption={annonce.date_preemption}
+            description={annonce.description}
+            sectors={annonce.sectors}
+            type={annonce.type}
+          />
       );
   
       if ((index + 1) % 3 === 0 || index === annonces.length - 1) {

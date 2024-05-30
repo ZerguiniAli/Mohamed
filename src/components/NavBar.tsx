@@ -1,13 +1,16 @@
 'use client'
-
 import React, { useState, MouseEvent } from 'react'
 import { useRouter } from 'next/navigation'
+import { useSession, signOut, SessionProvider,getSession } from 'next-auth/react' // Import SessionProvider
 import { ConnexionDialog } from './ConnexionDialog'
 import { InscriptionDialog } from './InscriptionDialog'
 import { NavigationMenuDemo } from './NavMenu'
+import { Button } from './ui/button'
+import { authOptions } from '@/app/lib/auth'
 
 const NavBar = () => {
   const router = useRouter()
+  const { data: session } = useSession()
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [activePage, setActivePage] = useState<string>('/')
 
@@ -19,10 +22,6 @@ const NavBar = () => {
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
-  }
-
-  const getClassNames = (page: string) => {
-    return `cursor-pointer transition ${activePage === page ? 'font-bold' : ''}`
   }
 
   return (
@@ -40,14 +39,20 @@ const NavBar = () => {
             </div>
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-10">
-               
                 <NavigationMenuDemo/>
               </div>
             </div>
           </div>
           <div className="hidden md:block">
             <div className="ml-4 flex items-center md:ml-6 gap-3">
-              <ConnexionDialog />
+              {session ? (
+                <>
+                <p>{session.user?.name}</p>
+                <Button onClick={() => signOut()}>LogOut</Button>
+                </>
+              ) : (
+                <ConnexionDialog />
+              )}
             </div>
           </div>
           <div className="-mr-2 flex md:hidden">
@@ -88,7 +93,11 @@ const NavBar = () => {
         <div className="pt-4 pb-3 border-t border-gray-200">
           <div className="flex items-center px-4">
             <div className="flex-shrink-0">
-              <ConnexionDialog />
+              {session ? (
+                <Button onClick={() => signOut()}>LogOut</Button>
+              ) : (
+                <ConnexionDialog />
+              )}
             </div>
             <div className="ml-4">
             </div>
@@ -99,4 +108,11 @@ const NavBar = () => {
   )
 }
 
-export default NavBar
+// Wrap the NavBar component with SessionProvider
+const NavBarWithSessionProvider = () => (
+  <SessionProvider>
+    <NavBar />
+  </SessionProvider>
+)
+
+export default NavBarWithSessionProvider
